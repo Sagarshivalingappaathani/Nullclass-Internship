@@ -1,0 +1,40 @@
+/* Hide the Google Translate toolbar */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Adjust the body position to avoid a gap at the top of the page */
+body {
+  top: 0 !important;
+}
+
+/* Additional styles for the translate component */
+.translate-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.goog-te-gadget {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.goog-te-gadget .goog-te-combo {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  body {
+    top: 0 !important;
+  }
+  
+  
+  
