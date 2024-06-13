@@ -62,6 +62,7 @@ const Auth = () => {
       setShowOtpInput(true);
       const randomotp = Math.floor(100000 + Math.random() * 900000);
       setactualOTP(randomotp);
+      console.log(randomotp);
       const url = "http://localhost:5000/langchange/fr";
       const payload = {
         otp: randomotp,
@@ -75,6 +76,8 @@ const Auth = () => {
       } catch (error) {
         console.error("Error sending OTP to email:", error);
       }
+    }else if(browser.name === "edge-chromium"){
+      dispatch(login({ email, password }, navigate));
     }
 
     try {
@@ -82,6 +85,7 @@ const Auth = () => {
         "http://localhost:5000/loginhistory/saveinfo",
         loginInfo
       );
+      //dispatch(login({ email, password }, navigate));
       console.log("Login info saved successfully");
     } catch (error) {
       console.error("Error saving login info:", error);
