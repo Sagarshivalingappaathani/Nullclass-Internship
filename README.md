@@ -48,5 +48,3 @@ After installing client dependencies, start the client using:
 npm start // in client/ directory
 ```
 
-This will start the development server.  The application will be accessible at `http://localhost:3000` (or other port specified by the client development server).
-
